@@ -76,6 +76,177 @@ body {
     font-weight: 600;
 }
 
+/* Fixed the blending issue from Screenshot 2026-05-27 at 6.28.31 PM.jpg */
+.subtitle {
+    color: #ffffff !important; /* Forced to absolute solid white for clean readability */
+    font-size: 0.95rem;
+    font-weight: 600; /* Increased weight slightly to make the white pop over the blue */
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin: 15px 0 20px 0;
+    opacity: 0.9;
+}
+
+/* 4. NAVIGATION LINKS (Centered inside Banner) */
+.site-nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+    padding-bottom: 5px;
+    opacity: 0.85;
+    transition: opacity 0.2s ease, border-color 0.2s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover, .nav-link.active {
+    opacity: 1;
+    border-bottom: 2px solid #ffffff; /* Elegant underline accent */
+}
+
+/* 5. CONTENT LAYOUT CONTAINERS */
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Hero Section / Brand Callout Style */
+#hero-statement h2 {
+    color: var(--pen-blue);
+    font-size: 2rem;
+    margin-top: 20px;
+    border-left: 4px solid var(--pen-blue);
+    padding-left: 15px;
+}
+
+/* 6. GRID CARDS & INTERACTION LAYOUT */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    background: var(--card-white);
+    border: 1px solid rgba(0, 74, 153, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    color: var(--text-main);
+    box-shadow: 0 4px 12px rgba(0, 74, 153, 0.03);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Makes your clickable grid cards interact fluidly on hover */
+.portfolio-link-card:hover, .link-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 74, 153, 0.08);
+    border-color: var(--pen-blue);
+}
+
+.card-photo {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-photo[alt="Enterprise Architecture & IT Analysis"] {
+    object-position: center; /* Ensures your new EA.jpg fits cleanly inside the card frame */
+}
+
+.card-text {
+    padding: 20px;
+}
+
+.card-text h3 {
+    margin: 0 0 10px 0;
+    color: var(--pen-blue);
+    font-size: 1.3rem;
+}
+
+.card-text p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #556b82;
+}
+
+/* 7. RESUME DOCUMENT LAYOUT */
+.resume-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 40px;
+    border-top: 2px dashed rgba(0, 74, 153, 0.15);
+    padding-top: 30px;
+}
+
+.download-btn {
+    background-color: var(--pen-blue);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background-color 0.2s;
+    box-shadow: 0 4px 10px rgba(0, 74, 153, 0.15);
+}
+
+.download-btn:hover {
+    background-color: #003366;
+}
+
+.resume-container {
+    margin-top: 20px;
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.resume-img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #e1e8ed;
+    border-radius: 4px;
+}
+
+/* 8. FOOTER STYLING */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 60px;
+    border-top: 1px solid rgba(0, 74, 153, 0.08);
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}}
+
+.profile-img:hover {
+    transform: scale(1.03);
+}
+
+/* Banner Text Elements */
+.banner-text h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    color: #ffffff !important; /* Overrides default colors to match your dark layout background */
+    font-weight: 600;
+}
+
 .subtitle {
     color: #e0f0ff;
     font-size: 0.95rem;
