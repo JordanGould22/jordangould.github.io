@@ -714,6 +714,20 @@ footer {
     margin: 20px auto;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,.15);
+   .logo-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.artifact-logo {
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.artifact-logo:hover {
+    transform: scale(1.1);
 }
     }
 }
