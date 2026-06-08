@@ -718,6 +718,49 @@ footer {
 
 .artifact-logo:hover {
     transform: scale(1.1);
+   /* =========================
+Portfolio Page Styling
+========================= */
+
+.portfolio-grid {
+display: flex;
+flex-direction: column;
+gap: 2rem;
+}
+
+.portfolio-card {
+background: #ffffff;
+padding: 2rem;
+border-radius: 12px;
+box-shadow: 0 4px 12px rgba(0,0,0,.08);
+}
+
+/* Internship Poster */
+.poster-large {
+width: 65%;
+max-width: 600px;
+height: auto;
+display: block;
+margin: 20px auto;
+border-radius: 10px;
+box-shadow: 0 4px 12px rgba(0,0,0,.15);
+}
+
+/* Logo Links */
+.logo-container {
+text-align: center;
+margin-top: 20px;
+}
+
+.artifact-logo {
+width: 100px;
+height: auto;
+transition: transform 0.3s ease;
+cursor: pointer;
+}
+
+.artifact-logo:hover {
+transform: scale(1.1);
 }
     }
 }
