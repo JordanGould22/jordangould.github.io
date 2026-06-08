@@ -707,16 +707,6 @@ footer {
     margin-top: 1rem;
     border-radius: 10px;
  
-.poster-large {
-    width: 100%;
-    max-width: 1000px;
-    display: block;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,.15);
-   .logo-container {
-    text-align: center;
-    margin-top: 20px;
 }
 
 .artifact-logo {
