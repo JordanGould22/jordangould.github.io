@@ -398,4 +398,26 @@ footer {
     overflow: hidden; /* Drops an invisible boundary box around the layout */
     padding: 15px;
     box-sizing: border-box;
+   /* ==========================================================================
+   INTERNSHIP POSTER SPECIFIC CONSTRAINT
+   ========================================================================== */
+
+/* 1. Constrain the specific poster image class */
+.poster-large {
+    width: 100%;          /* Forces the image to span exactly the width of its container */
+    max-width: 800px;     /* Prevents it from getting blindingly huge on massive desktop screens */
+    height: auto;         /* Maintains perfect aspect ratio so it doesn't look stretched */
+    display: block;       /* Eliminates weird inline spacing gaps at the bottom */
+    margin: 20px auto;    /* Centers the poster horizontally with some breathing room */
+    border-radius: 8px;   /* Softens the corners to match your sticky note / card vibe */
+    box-shadow: 0 4px 15px rgba(0, 74, 153, 0.1); /* Adds a clean, professional drop shadow */
+}
+
+/* 2. Safety wrapper for the container it's sitting in */
+.poster-large;parent, 
+div:has(> .poster-large) {
+    max-width: 100%;
+    overflow: hidden;     /* Keeps the poster completely locked inside the page boundaries */
+    padding: 10px;
+    box-sizing: border-box;
 }
