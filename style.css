@@ -376,4 +376,26 @@ footer {
     border-top: 1px solid rgba(0, 74, 153, 0.08);
     font-size: 0.9rem;
     color: #7f8c8d;
+   /* ==========================================================================
+   INTERNSHIP POSTER & CARD IMAGE CONSTRAINTS
+   ========================================================================== */
+
+/* Forces any poster images inside a container to scale perfectly */
+.resume-img, 
+.card-photo,
+#experience img,
+.sticky-note-grid img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain; /* Prevents cropping or stretching of large documents */
+}
+
+/* If your poster is inside a specific showcase container, wrap it tightly */
+.resume-container {
+    max-width: 100%;
+    overflow: hidden; /* Drops an invisible boundary box around the layout */
+    padding: 15px;
+    box-sizing: border-box;
 }
